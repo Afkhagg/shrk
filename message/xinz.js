@@ -1600,9 +1600,9 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 			case prefix+'waifu':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 reply(mess.wait)
-						axios.get(`https://api-ramlan.herokuapp.com/api/waifu?apikey=${apikey}`)
+						axios.get(`https://waifu.pics/api/sfw/shinobu`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.link, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Neh', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1644,9 +1644,9 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
             case prefix+'loli':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 reply(mess.wait)
-                axios.get(`https://api-ramlan.herokuapp.com/api/loli?apikey=${apikey}`)
+                axios.get(`https://waifu.pics/api/sfw/shinobu`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.link, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Neh', msg)
 						})
 						limitAdd(sender, limit)
 						}
