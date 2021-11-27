@@ -132,9 +132,9 @@ exports.gabutMenu = (prefix, ownerName) => {
 ├≽ *${prefix}seberapagay*
 ├≽ *${prefix}truth*
 ├≽ *${prefix}dare*
-├≽ *${prefix}seberapapintar*
-├≽ *${prefix}seberapacringe*
-├≽ *${prefix}seberapatampan*
+├≽ *${prefix}cantik*
+├≽ *${prefix}ganteng*
+├≽ *${prefix}jadian*
 ├─────────────────────
 ╘═══ 《 *By ${ownerName}* 》 ═══`
 }
@@ -165,8 +165,11 @@ exports.downloadMenu = (prefix, ownerName) => {
 exports.searchMenu = (prefix, ownerName) => {
     return `╒═══ 《 *SEARCH MENU* 》 ═══
 ├────────────────────
-├≽ *${prefix}yts*
+├≽ *${prefix}ytsearch*
 ├≽ *${prefix}pinterest*
+├≽ *${prefix}brainly*
+├≽ *${prefix}spotify*
+├≽ *${prefix}artinama*
 ├─────────────────────
 ╘═══ 《 *By ${ownerName}* 》 ═══`
 }
