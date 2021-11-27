@@ -1625,6 +1625,14 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                         data.reply(`Maaf lagu ${data.body} tidak ditemukan`)
                     }
                     break
+                case 'artinama':
+                    if(isLimit(data.sender)) return data.reply(mess.limit)
+                    if(data.body == "") return data.reply(`Kirim perintah *${data.prefix}artinama [ nama ]*\nContoh : ${data.prefix}artinama elios`)
+                    data.reply(mess.wait)
+                    res = await axios.get(`${configs.apiUrl}/api/artinama?apikey=${configs.zeksKey}&nama=${data.body}`)
+                    if(res.data.status == false) data.reply(res.data.message)
+                    data.reply(res.data.result)
+                    break
 //------------------< VVIBU >-------------------
 			case prefix+'waifu':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
