@@ -24,6 +24,7 @@ exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushn
 ├≽ *Limit* : *${isPremium ? 'Unlimited' : `${sisalimit}/${limitCount}`}*
 ├≽ *Limit Game* : *${isOwner ? 'Unlimited' : `${glimit}/${gcount}`}*
 ├≽ *Expired Prem : ${isOwner ? '-' : isPremium ? expired : 'Not Premium'}*
+├≽ *Group bot : https://chat.whatsapp.com/KXjIrWuCtK9FudKsA6u8fr*
 ├────────────────────
 ╞═══ 《 *MENU* 》 ═══
 ├────────────────────
