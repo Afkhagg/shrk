@@ -129,7 +129,6 @@ exports.gabutMenu = (prefix, ownerName) => {
 ├≽ *${prefix}hobby*
 ├≽ *${prefix}rate*
 ├≽ *${prefix}cekbapak*
-├≽ *${prefix}seberapagay*
 ├≽ *${prefix}truth*
 ├≽ *${prefix}dare*
 ├≽ *${prefix}cantik*
@@ -144,8 +143,6 @@ exports.gameMenu = (prefix, ownerName) => {
 ├────────────────────
 ├≽ *${prefix}tictactoe*
 ├≽ *${prefix}delttt*
-├≽ *${prefix}susunkata*
-├≽ *${prefix}slot*
 ├≽ *${prefix}suit*
 ├─────────────────────
 ╘═══ 《 *By ${ownerName}* 》 ═══`
@@ -168,7 +165,6 @@ exports.searchMenu = (prefix, ownerName) => {
 ├≽ *${prefix}ytsearch*
 ├≽ *${prefix}pinterest*
 ├≽ *${prefix}brainly*
-├≽ *${prefix}spotify*
 ├≽ *${prefix}artinama*
 ├─────────────────────
 ╘═══ 《 *By ${ownerName}* 》 ═══`
