@@ -202,6 +202,8 @@ exports.animeMenu = (prefix, ownerName) => {
 ├≽ *${prefix}loli*
 ├≽ *${prefix}shinobu*
 ├≽ *${prefix}nekonime*
+├≽ *${prefix}megumin*
+├≽ *${prefix}husbu*
 ├─────────────────────
 ╘═══ 《 *By ${ownerName}* 》 ═══`
 }
