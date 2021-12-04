@@ -1657,7 +1657,10 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 			case prefix+'megumin':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 reply(mess.wait)
-						sendFileFromUrl(from, `https://api-ramlan.herokuapp.com/api/megumin?apikey=${apikey}`, 'Neh', msg)
+						axios.get(`https://api.waifu.pics/sfw/megumin`)
+						.then(({data}) => {
+						sendFileFromUrl(from, data.url, 'Neh', msg)
+						})
 						limitAdd(sender, limit)
 						}
                       break
