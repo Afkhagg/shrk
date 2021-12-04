@@ -1596,7 +1596,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 const rmoreteks2 = q.split('|')[1] ? q.split('|')[1] : ''
                 reply(`${rmoreteks1}${readMore}${rmoreteks2}`)
                 break
-             case 'brainly':
+             case prefix+'brainly':
                     try {
                         if(isLimit(data.sender)) return data.reply(mess.limit)
                         if(data.body == "") return data.reply(`Kirim perintah *${data.prefix}brainly [ query ]*\nContoh : ${data.prefix}brainly siapa penemu lampu`)
@@ -1625,7 +1625,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                         data.reply(`Maaf lagu ${data.body} tidak ditemukan`)
                     }
                     break
-                case 'artinama':
+                case prefix+'artinama':
                     if(isLimit(data.sender)) return data.reply(mess.limit)
                     if(data.body == "") return data.reply(`Kirim perintah *${data.prefix}artinama [ nama ]*\nContoh : ${data.prefix}artinama elios`)
                     data.reply(mess.wait)
@@ -1691,12 +1691,12 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 						limitAdd(sender, limit)
 						}
                       break
-            case prefix+'shota':{
+            case prefix+'cringe':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 reply(mess.wait)
-                axios.get(`https://api-ramlan.herokuapp.com/api/shota?apikey=${apikey}`)
+                axios.get(`https://api.waifu.pics/sfw/cringe}`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.link, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Neh', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1704,9 +1704,9 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
             case prefix+'husbu':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 reply(mess.wait)
-                axios.get(`https://api-ramlan.herokuapp.com/api/husbu?apikey=${apikey}`)
+                axios.get(`https://recoders-area.caliph.repl.co/api/husbu}`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.link, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Neh', msg)
 						})
 						limitAdd(sender, limit)
 						}
