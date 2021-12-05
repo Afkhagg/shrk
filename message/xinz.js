@@ -750,7 +750,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 ])
                 .on('error', () => reply(mess.error.api))
                 .on('exit', () => {
-                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkiri.jpg'), image, {quoted: msg, caption: `Jangan malas pak...`, thumbnail: Buffer.alloc(0)})
+                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkiri.jpg'), image, {quoted: msg, caption: `nih kak sudah haruto buat`, thumbnail: Buffer.alloc(0)})
                     limitAdd(sender, limit)
                 })
             }
@@ -779,7 +779,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 ])
                 .on('error', () => reply(mess.error.api))
                 .on('exit', () => {
-                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkanan.jpg'), image, {quoted: msg, caption: `Jangan malas pak...`, thumbnail: Buffer.alloc(0)})
+                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkanan.jpg'), image, {quoted: msg, caption: `nih kak sudah haruto buat`, thumbnail: Buffer.alloc(0)})
                     limitAdd(sender, limit)
                 })
             }
@@ -808,7 +808,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 ])
                 .on('error', () => reply(mess.error.api))
                 .on('exit', () => {
-                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkiri.jpg'), image, {quoted: msg, caption: `Jangan malas pak...`, thumbnail: Buffer.alloc(0)})
+                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkiri.jpg'), image, {quoted: msg, caption: `nih kak sudah haruto buat`, thumbnail: Buffer.alloc(0)})
                     limitAdd(sender, limit)
                 })
             }
@@ -837,7 +837,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 ])
                 .on('error', () => reply(mess.error.api))
                 .on('exit', () => {
-                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkanan.jpg'), image, {quoted: msg, caption: `Jangan malas pak...`, thumbnail: Buffer.alloc(0)})
+                    xinz.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkanan.jpg'), image, {quoted: msg, caption: `nih kak sudah haruto buat`, thumbnail: Buffer.alloc(0)})
                     limitAdd(sender, limit)
                 })
             }
@@ -1639,7 +1639,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
 						axios.get(`https://waifu.pics/api/sfw/waifu`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1649,7 +1649,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
 						axios.get(`https://waifu.pics/api/sfw/neko`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1659,7 +1659,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
 						axios.get(`https://api.waifu.pics/sfw/megumin`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1676,7 +1676,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
 						axios.get('https://waifu.pics/api/sfw/shinobu')
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1686,7 +1686,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
                 axios.get(`https://waifu.pics/api/sfw/shinobu`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1696,7 +1696,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
                 axios.get(`https://api.waifu.pics/sfw/cringe}`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
@@ -1706,7 +1706,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 reply(mess.wait)
                 axios.get(`https://recoders-area.caliph.repl.co/api/husbu}`)
 						.then(({data}) => {
-						sendFileFromUrl(from, data.url, 'Neh', msg)
+						sendFileFromUrl(from, data.url, 'Nih kak', msg)
 						})
 						limitAdd(sender, limit)
 						}
