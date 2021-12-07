@@ -522,7 +522,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
             }
                 break
             case prefix+'stickerwm': case prefix+'swm': case prefix+'take': case prefix+'takesticker': case prefix+'takestick':{
-                if (!isPremium) return reply(mess.OnlyPrem)
+                if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 if (args.length < 2) return reply(`Penggunaan ${command} nama|author`)
                 let packname1 = q.split('|')[0] ? q.split('|')[0] : q
                 let author1 = q.split('|')[1] ? q.split('|')[1] : ''
@@ -1096,9 +1096,9 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 if (isNaN(q.split("|")[0])) return reply(`Penggunaan ${command} nomor|nama`)
                 xinz.sendContact(from, q.split("|")[0], q.split("|")[1], msg)
                 break
-            case prefix+'hidetag':{
-                if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
-                if (args.length < 2) return reply(`Masukkan text`)
+            case prefix+'hidetag':
+              if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+              if (args.length < 2) return reply(`Masukkan text`)
                 let arr = [];
                 for (let i of groupMembers){
                     arr.push(i.jid)
